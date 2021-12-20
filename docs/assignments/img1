@@ -1,0 +1,10 @@
+<html><head><style>
+.img1 
+{
+	float: center;
+}
+</style>
+</head><body>
+	<img class="img1" src="spiderman1.jpg">
+
+</body></html>
