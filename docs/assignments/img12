@@ -1,0 +1,10 @@
+<html><head><style>
+.img12 
+{
+	float: center;
+}
+</style>
+</head><body>
+	<img class="img12" src="corgi2.jpg">
+
+</body></html>
