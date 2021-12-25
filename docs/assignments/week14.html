@@ -1,40 +1,27 @@
 <html><head><style>
-body 
-{
-	width: 80%;
-	margin: auto;
-}
-.img11, .img12, .img13, .img14 , .img15, .img16, .img17, .img18, .img19, .img20, .img21, .img22
-{
-	float: center;
-}
-  
-.flex-container {
-  display: flex;
-  background-color: DodgerBlue;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px darkgray;
-  margin: 10px;
+
+
+.flex {display: flex;
+border-radius: 10px;
+margin: 10px;
+padding: 20px;
+background-color:lightblue;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;}
+a{
+background-color: #f1f1f1;
+margin: 10px;
+padding: 5px;
+font-size: 30px;
+border-radius: 50px;
+height: 100px;
 }
 
-.flex-container-wrap {
-  flex-wrap: wrap;
-}
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-  border-radius: 10px;
-}
-.justify-space-between
-  {
-    justify-content:space-between;
-  }
-  .align-items-center {align-items: center;}
 </style>
 </head><body>
-  <div class="flex-container flex-container-wrap justify-space-between align-items-center">
+  <div class="flex">
   <div><a href="img11" target="blank"><img class="img11" src="corgi1.jpg" width="400px" height="300px"></a></div>
   <div><a href="img12" target="blank"><img class="img12" src="corgi2.jpg" width="400px" height="300px></a></div>
   <div><a href="img13" target="blank"><img class="img13" src="corgi3.jpg" width="400px" height="300px></a></div>
