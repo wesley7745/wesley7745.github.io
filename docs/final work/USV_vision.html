@@ -74,3 +74,52 @@ span {
 
 
   </body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- 引入 Highcharts 库 -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+  <div id="DepthChartSetID" class="Depchart" style="width: 100%; height: 300px;"></div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- 引入 Highcharts 库 -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+  <div id="DepthChartSetID" class="Depchart" style="width: 100%; height: 300px;"></div>
+
+  <script>
+    // 使用 Highcharts 函式來設定圖表選項和數據
+    Highcharts.chart('DepthChartSetID', {
+      title: {
+        text: '時序列圖'
+      },
+      xAxis: {
+        categories: ['12:00:00', '12:10:00', '12:20:00', '12:30:00', '12:40:00', '12:50:00'], // 時間點
+        gridLineWidth: 1, // 網格線寬度
+        gridLineColor: '#e0e0e0', // 網格線顏色
+        gridLineDashStyle: 'Dot', // 網格線樣式（虛線）
+        tickInterval: 1 // 網格線間隔
+      },
+      yAxis: {
+        title: {
+          text: '數值'
+        },
+        gridLineWidth: 1, // 網格線寬度
+        gridLineColor: '#e0e0e0', // 網格線顏色
+        gridLineDashStyle: 'Solid' // 網格線樣式（實線）
+      },
+      series: [{
+        type: 'line', // 使用折線圖類型
+        name: '數值序列', // 序列名稱
+        data: [10, 20, 15, 30, 25, 40] // 數值數據
+      }]
+    });
+  </script>
+</body>
+</html>
